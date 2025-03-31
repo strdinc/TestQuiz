@@ -1,0 +1,23 @@
+{
+  "name": "2+2",
+  "questions": [
+    {
+      "text": "2+2",
+      "type": "тестовый вопрос",
+      "image": "f93787f4-dcaf-4d1d-96f9-31e9c0d9d1e4.png",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "4"
+    },
+    {
+      "text": "2+2",
+      "type": "с развернутым ответом",
+      "image": "29e2de17-e19f-4542-9c88-1ae49d8e739d.png",
+      "correct_answer": "4"
+    }
+  ]
+}

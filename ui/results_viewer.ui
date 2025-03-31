@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultsViewer</class>
+ <widget class="QDialog" name="ResultsViewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Результаты тестов</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="comboBox_tests"/>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget_results">
+      <column>
+       <property name="text">
+        <string>Пользователь</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Результат</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Дата</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
