@@ -48,6 +48,6 @@
 
 1. Клонировать репозиторий:
 ```bash
-git clone [https://github.com/your-repo/test-system.git](https://github.com/strdinc/TestQuiz)
+git clone https://github.com/strdinc/TestQuiz
 ```
 2. Запустить файл main.exe
