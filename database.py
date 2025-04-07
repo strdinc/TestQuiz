@@ -10,17 +10,17 @@ class DatabaseManager:
     def __init__(self, db_name='tests.db'):
         """
         Инициализация менеджера базы данных
-        :param db_name: имя файла базы данных (по умолчанию 'tests.db')
+        :param db_name: имя файла базы данных
         """
         self.db_name = db_name
         self._init_db()  # Создание структуры БД при инициализации
 
     def _init_db(self):
-        """Инициализация структуры базы данных (создание таблиц)"""
+        """Инициализация структуры базы данных"""
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
 
-            # Создание таблицы тестов, если она не существует
+            # Создание таблицы тестов (если она не существует)
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS tests (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -30,7 +30,7 @@ class DatabaseManager:
                 )
             ''')
 
-            # Создание таблицы результатов, если она не существует
+            # Создание таблицы результатов (если она не существует)
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS results (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,

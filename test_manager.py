@@ -1,7 +1,5 @@
-# Импорт необходимых модулей
 import json
 from enum import Enum
-from pathlib import Path
 
 
 class QuestionType(Enum):
@@ -51,7 +49,7 @@ class TestManager:
         """
         Создание вопроса заданного типа
         :param question_text: текст вопроса
-        :param question_type: тип вопроса (из перечисления QuestionType)
+        :param question_type: тип вопроса
         :param options: варианты ответов (для тестового вопроса)
         :param correct_answer: правильный ответ
         :return: словарь с данными вопроса
